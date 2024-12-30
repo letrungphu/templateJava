@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.template.template.api.mysql.mapper.SupplierManagementMapper">
+    <select id="getListSupplier" resultType="map">
+        SELECT  SUPPLIER_ID
+                ,PASSWORD
+                ,SUPPLIER_NAME
+                ,SHORT_NAME
+        FROM    SUBCON_SUPPLIERS
+        ORDER BY SUPPLIER_ID
+    </select>
+</mapper>

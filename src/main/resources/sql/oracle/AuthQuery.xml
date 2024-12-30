@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.template.template.auth.mapper.AuthMapper">
+    <select id="getUserAndRole" resultType="map">
+        SELECT  USER_NAME
+                ,PASSWORD
+                ,ROLE
+        FROM    ACCOUNT
+        WHERE   USER_NAME = #{user_name}
+    </select>
+</mapper>
